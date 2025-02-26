@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emisi Karbon Listrik Indonesia</title>
+    <link rel="stylesheet" href="lw.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">EC</a>
+                </div>
+                <div class="menu" id="menu">
+                    <a href="index.html">Back</a>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <Main>
+    <div class="container">
+        <h1>Emisi Karbon dari Konsumsi Listrik di Indonesia</h1>
+        <select id="region">
+            <option value="Sumatera">Sumatera</option>
+            <option value="Jawa">Jawa</option>
+            <option value="Kalimantan">Kalimantan</option>
+            <option value="Sulawesi">Sulawesi</option>
+            <option value="Papua">Papua</option>
+            <option value="Bali-Nusa Tenggara">Bali-Nusa Tenggara</option>
+        </select><br>
+        <input type="number" id="electricityUsage" placeholder="Masukkan konsumsi listrik (kWh)"><br>
+        <button onclick="calculateEmissions()">Hitung Emisi</button>
+        <p id="result"></p>
+    </div>
+</Main>
+    <script src="lw.js"></script>
+</body>
+</html>

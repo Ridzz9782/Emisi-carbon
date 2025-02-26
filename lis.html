@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Emisi Karbon Listrik</title>
+    <link rel="stylesheet" href="lis.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">EC</a>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Back</a>
+    
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="container">
+        <h1>Kalkulator Emisi Karbon Listrik</h1>
+        <label for="consumption">Konsumsi Listrik (kWh per bulan):</label>
+        <input type="number" id="consumption" placeholder="Masukkan konsumsi listrik dalam kWh">
+        <button onclick="calculateEmissions()">Hitung Emisi Karbon</button>
+        <div class="result" id="result"></div>
+    </div>
+    </main>
+
+    <script src="lis.js">
+
+    </script>
+</body>
+</html>

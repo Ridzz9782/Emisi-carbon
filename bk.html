@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Emisi Karbon Bahan Bakar</title>
+    <link rel="stylesheet" href="bk.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">EC</a>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Back</a>
+    
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="container">
+        <h1>Kalkulator Emisi Karbon Bahan Bakar</h1>
+        <label for="fuel-type">Jenis Bahan Bakar:</label>
+        <select id="fuel-type">
+            <option value="bensin">Bensin</option>
+            <option value="diesel">Diesel</option>
+            <option value="solar">Solar</option>
+        </select>
+        <label for="fuel-amount">Jumlah Bahan Bakar (liter):</label>
+        <input type="number" id="fuel-amount" placeholder="Masukkan jumlah bahan bakar dalam liter">
+        <button onclick="calculateEmissions()">Hitung Emisi Karbon</button>
+        <div class="result" id="result"></div>
+    </div>
+    </main>
+
+    <script src="bk.js">
+
+    </script>
+</body>
+</html>
