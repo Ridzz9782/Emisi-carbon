@@ -1,17 +1,12 @@
 function calculateEmissions() {
-    const consumption = document.getElementById('consumption').value;
-    const emissionFactor = 0.92; // Faktor emisi karbon (kg CO2 per kWh)
+    const appliance = parseFloat(document.getElementById('appliance').value);
+    const hours = parseFloat(document.getElementById('hours').value) || 0;
 
-    if (consumption) {
-        const monthlyEmissions = consumption * emissionFactor; // Emisi bulanan dalam kg CO2
-        const yearlyEmissions = monthlyEmissions * 12; // Emisi tahunan dalam kg CO2
+    // Faktor emisi karbon (dalam kg CO2 per kWh)
+    const emissionFactor = 0.92;
+    
+    const totalUsage = appliance * hours;
+    const totalEmissions = totalUsage * emissionFactor;
 
-        document.getElementById('result').innerHTML = `
-            <h2>Hasil Perhitungan</h2>
-            <p>Emisi Karbon Bulanan: ${monthlyEmissions.toFixed(2)} kg CO2</p>
-            <p>Emisi Karbon Tahunan: ${yearlyEmissions.toFixed(2)} kg CO2</p>
-        `;
-    } else {
-        document.getElementById('result').innerHTML = '<p>Mohon masukkan data konsumsi listrik.</p>';
-    }
+    document.getElementById('result').innerHTML = `<h2>Total Emisi Karbon Harian: ${totalEmissions.toFixed(2)} kg CO2</h2>`;
 }

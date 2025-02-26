@@ -170,7 +170,7 @@ main {
     }
 }
 
-.container, hr {
+.container {
     max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
@@ -179,10 +179,6 @@ main {
     border-radius: 5px;
     /* animation: bounce 2s; */
     animation: bounce 2s;
-}
-
-hr {
-    background-color: hsl(175, 100%, 50%);
 }
 
 h1 {

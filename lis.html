@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Emisi Karbon Listrik</title>
+    <title>Kalkulator Emisi Karbon Peralatan Listrik</title>
     <link rel="stylesheet" href="lis.css">
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="#">EC</a>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">EC</a>
+                </div>
             </div>
-            <div class="menu" id="menu">
-                <a href="index.html">Back</a>
-    
-            </div>
-        </div>
+        </nav>
     </header>
-    <main>
     <div class="container">
-        <h1>Kalkulator Emisi Karbon Listrik</h1>
-        <label for="consumption">Konsumsi Listrik (kWh per bulan):</label>
-        <input type="number" id="consumption" placeholder="Masukkan konsumsi listrik dalam kWh">
+        <h1>Kalkulator Emisi Karbon</h1>
+        <p>Pilih peralatan listrik dan masukkan waktu pemakaian harian (dalam jam):</p>
+        <label for="appliance">Peralatan Listrik:</label>
+        <select id="appliance">
+            <option value="0.1">Kulkas</option>
+            <option value="0.12">Dispenser</option>
+            <option value="0.05">Laptop</option>
+            <option value="0.15">Komputer</option>
+            <option value="0.05">Kipas Angin</option>
+            <option value="0.2">Printer</option>
+            <option value="1.5">Kompor Listrik</option>
+            <option value="0.1">TV</option>
+        </select>
+        <label for="hours">Waktu Pemakaian (jam):</label>
+        <input type="number" id="hours" placeholder="Jam">
         <button onclick="calculateEmissions()">Hitung Emisi Karbon</button>
         <div class="result" id="result"></div>
     </div>
-    </main>
-
     <script src="lis.js">
 
     </script>
 </body>
 </html>
+
