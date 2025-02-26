@@ -76,6 +76,7 @@ body {
     border-radius: 8px;
     margin-top: 30px;
     margin-inline: 200px;
+    animation: bounce 2s;
 }
 
 input, select, button {
@@ -95,4 +96,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+@keyframes bounce {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
