@@ -129,3 +129,20 @@ button:hover {
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
+
+footer {
+    background-color: #686868;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 248px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer p {
+    margin: 10px 0;
+}
